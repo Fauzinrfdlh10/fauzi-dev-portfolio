@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio personal M. Fauzi Nurfadilah, Frontend dan Fullstack Developer yang membangun pengalaman digital modern.">
+  <title>M. Fauzi Nurfadilah | Premium Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading">
+    <div class="loader-line"></div>
+    <p>Preparing experience</p>
+  </div>
+
+  <canvas class="ambient-canvas" id="ambient-canvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#home" aria-label="Kembali ke hero">
+      <span class="brand-mark">FN</span>
+      <span>Fauzi.dev</span>
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="nav-links" aria-label="Navigasi utama">
+      <a href="#about">About</a>
+      <a href="#skills">Stack</a>
+      <a href="#projects">Work</a>
+      <a href="#experience">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy-block">
+        <p class="eyebrow reveal-item">Independent Web Developer</p>
+        <h1 class="hero-title reveal-item">M. Fauzi Nurfadilah</h1>
+        <p class="hero-role reveal-item">
+          <span id="typed-role">Frontend Developer</span>
+          <span class="typing-caret"></span>
+        </p>
+        <p class="hero-description reveal-item">I design and build polished web experiences with sharp interfaces, fluid motion, and code that is ready for real product use.</p>
+        <div class="hero-actions reveal-item">
+          <a class="btn btn-primary magnetic" href="#projects">Explore Work</a>
+          <a class="btn btn-secondary magnetic" href="#contact">Start a Project</a>
+        </div>
+      </div>
+
+      <div class="hero-scene reveal-item" data-speed="0.08">
+        <div class="profile-card tilt-card">
+          <div class="profile-media">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=85" alt="Portrait profesional developer">
+          </div>
+          <div class="profile-meta">
+            <span>Currently crafting</span>
+            <strong>Modern web systems</strong>
+          </div>
+        </div>
+
+        <div class="signal-card signal-card-one">
+          <span>01</span>
+          <strong>Pixel precision</strong>
+        </div>
+        <div class="signal-card signal-card-two">
+          <span>02</span>
+          <strong>Product thinking</strong>
+        </div>
+        <div class="hero-console">
+          <span class="console-dot"></span>
+          <code>build: clean-ui --motion=smooth</code>
+        </div>
+      </div>
+
+      <div class="hero-index" aria-label="Portfolio highlights">
+        <span>04 featured builds</span>
+        <span>10+ core technologies</span>
+        <span>Mobile-first delivery</span>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal-item">
+        <p class="eyebrow">About</p>
+        <h2>Building interfaces that feel calm, fast, and intentional.</h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-sticky reveal-item">
+          <h3>Profile</h3>
+          <p>Saya menggabungkan sensitivitas visual, struktur frontend yang rapi, dan pemahaman backend dasar untuk membuat pengalaman digital yang siap dipakai, bukan hanya enak dilihat.</p>
+        </div>
+
+        <div class="insight-board">
+          <article class="insight-card reveal-item">
+            <span>01</span>
+            <h3>Visual Direction</h3>
+            <p>Clean layout, refined hierarchy, dan detail interaksi yang membuat produk terasa premium.</p>
+          </article>
+          <article class="insight-card insight-card-offset reveal-item">
+            <span>02</span>
+            <h3>Engineering Taste</h3>
+            <p>HTML semantic, CSS modern, JavaScript interaktif, serta integrasi database dan API.</p>
+          </article>
+          <article class="insight-card reveal-item">
+            <span>03</span>
+            <h3>Delivery Mindset</h3>
+            <p>Komunikatif, sistematis, cepat belajar, dan fokus menyelesaikan detail yang terasa oleh pengguna.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading reveal-item">
+        <p class="eyebrow">Tech Stack</p>
+        <h2>Tools yang saya gunakan untuk mengubah ide menjadi produk web yang terasa matang.</h2>
+      </div>
+
+      <div class="stack-stage">
+        <div class="stack-visual reveal-item">
+          <div class="stack-card-header">
+            <span>Skill Highlight</span>
+            <h3>Frontend craft with fullstack awareness.</h3>
+            <p>Fokus utama saya adalah membuat interface yang rapi, responsive, dan terasa premium saat digunakan.</p>
+          </div>
+
+          <div class="meter-wrap">
+            <div class="skill-meter" data-meter="92">
+              <span>92</span>
+              <small>UI Polish</small>
+            </div>
+          </div>
+
+          <div class="skill-summary">
+            <div>
+              <strong>12</strong>
+              <span>Core tools</span>
+            </div>
+            <div>
+              <strong>3</strong>
+              <span>Focus areas</span>
+            </div>
+            <div>
+              <strong>Clean</strong>
+              <span>Code style</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack-panel reveal-item">
+          <div class="stack-group">
+            <div class="stack-group-head">
+              <span>Frontend</span>
+              <small>Interface & motion</small>
+            </div>
+            <div class="stack-grid">
+              <button class="tech-pill" data-score="96" data-focus="Semantic structure and accessible markup">HTML</button>
+              <button class="tech-pill" data-score="94" data-focus="Responsive layouts and visual systems">CSS</button>
+              <button class="tech-pill" data-score="90" data-focus="Interactions, state, and animation">JavaScript</button>
+              <button class="tech-pill" data-score="86" data-focus="Component-driven frontend products">React</button>
+              <button class="tech-pill" data-score="84" data-focus="Fast utility-first interface work">Tailwind</button>
+              <button class="tech-pill" data-score="88" data-focus="Micro-interaction and layout polish">UI/UX</button>
+            </div>
+          </div>
+
+          <div class="stack-group">
+            <div class="stack-group-head">
+              <span>Backend</span>
+              <small>Logic & data</small>
+            </div>
+            <div class="stack-grid">
+              <button class="tech-pill" data-score="80" data-focus="Server-side logic and web systems">PHP</button>
+              <button class="tech-pill" data-score="78" data-focus="Automation and backend scripting">Python</button>
+              <button class="tech-pill" data-score="76" data-focus="Performant services and API logic">Golang</button>
+              <button class="tech-pill" data-score="74" data-focus="Object-oriented fundamentals">Java</button>
+              <button class="tech-pill" data-score="82" data-focus="Relational data modeling">MySQL</button>
+              <button class="tech-pill" data-score="80" data-focus="Realtime backend and auth">Supabase</button>
+            </div>
+          </div>
+
+          <div class="stack-group">
+            <div class="stack-group-head">
+              <span>Tools</span>
+              <small>Workflow</small>
+            </div>
+            <div class="stack-grid stack-grid-tools">
+              <button class="tech-pill" data-score="84" data-focus="Version control and collaboration">GitHub</button>
+              <button class="tech-pill" data-score="86" data-focus="Reusable component thinking">Design System</button>
+              <button class="tech-pill" data-score="82" data-focus="API integration and product flow">REST API</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="project-topline reveal-item">
+        <div>
+          <p class="eyebrow">Selected Work</p>
+          <h2>Featured builds presented like product launches.</h2>
+        </div>
+      </div>
+
+      <div class="rail-controls reveal-item" aria-label="Project slider controls">
+        <button class="rail-btn" id="project-prev" aria-label="Project sebelumnya">Prev</button>
+        <button class="rail-btn" id="project-next" aria-label="Project berikutnya">Next</button>
+      </div>
+
+      <div class="project-rail" id="project-rail">
+        <article class="project-card project-card-large reveal-item" data-project="nova">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=85" alt="Dashboard analytics modern">
+          <div class="project-overlay">
+            <span>Featured Dashboard</span>
+            <h3>Nova Analytics</h3>
+            <p>Business intelligence dashboard with visual clarity and premium dark interface.</p>
+            <div class="project-actions">
+              <button class="text-link project-open" type="button">View Detail</button>
+              <a class="text-link" href="#">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-item" data-project="launchpad">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1100&q=85" alt="Landing page startup">
+          <div class="project-overlay">
+            <span>Startup Site</span>
+            <h3>LaunchPad</h3>
+            <p>Conversion-focused company profile with cinematic structure.</p>
+            <div class="project-actions">
+              <button class="text-link project-open" type="button">View Detail</button>
+              <a class="text-link" href="#">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-item" data-project="meraki">
+          <img src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&w=1100&q=85" alt="Aplikasi ecommerce">
+          <div class="project-overlay">
+            <span>Commerce Prototype</span>
+            <h3>Meraki Commerce</h3>
+            <p>Responsive catalog, cart state, and focused checkout flow.</p>
+            <div class="project-actions">
+              <button class="text-link project-open" type="button">View Detail</button>
+              <a class="text-link" href="#">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-item" data-project="focusflow">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1100&q=85" alt="Aplikasi produktivitas">
+          <div class="project-overlay">
+            <span>Productivity App</span>
+            <h3>FocusFlow</h3>
+            <p>Minimal task experience with responsive micro-interactions.</p>
+            <div class="project-actions">
+              <button class="text-link project-open" type="button">View Detail</button>
+              <a class="text-link" href="#">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-heading reveal-item">
+        <p class="eyebrow">Experience & Education</p>
+        <h2>A focused journey through product design, frontend craft, and fullstack fundamentals.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal-item">
+          <span class="timeline-year">2026</span>
+          <div class="timeline-content">
+            <h3>Personal Portfolio & Freelance Builds</h3>
+            <p>Membangun portfolio, landing page, dashboard, dan sistem web kecil dengan fokus pada kualitas presentasi dan usability.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal-item">
+          <span class="timeline-year">2025</span>
+          <div class="timeline-content">
+            <h3>Fullstack Web Development</h3>
+            <p>Mengembangkan kemampuan frontend, backend, database, dan integrasi API memakai JavaScript, PHP, MySQL, dan Supabase.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal-item">
+          <span class="timeline-year">2024</span>
+          <div class="timeline-content">
+            <h3>Computer Science Learning Path</h3>
+            <p>Memperkuat dasar algoritma, pemrograman, struktur data, dan pola kerja developer profesional.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-shell reveal-item">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Let us turn a sharp idea into a polished web experience.</h2>
+          <p>Saya terbuka untuk project website, aplikasi web, internship, freelance, dan kolaborasi produk digital.</p>
+          <div class="contact-links">
+            <a href="mailto:fauzi@example.com">fauzi@example.com</a>
+            <a href="https://wa.me/6281234567890">WhatsApp</a>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <a href="https://github.com/">GitHub</a>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <label>
+            <span>Nama</span>
+            <input type="text" name="name" placeholder="Nama kamu">
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="email@domain.com">
+          </label>
+          <label>
+            <span>Project brief</span>
+            <textarea name="message" rows="4" placeholder="Ceritakan project yang ingin dibuat"></textarea>
+          </label>
+          <button class="btn btn-primary magnetic" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="project-modal" id="project-modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Tutup detail project">Close</button>
+      <span class="modal-label" id="modal-label">Featured Project</span>
+      <h2 id="modal-title">Project title</h2>
+      <p id="modal-description">Project description</p>
+      <div class="modal-stack" id="modal-stack"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Copyright <span id="year"></span> M. Fauzi Nurfadilah. All rights reserved.</p>
+    <a href="#home">Back to top</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
